@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[39,)"
+license="MIT License"
+issueTrackerURL="https://github.com/onVoid/More-Horse-Armor/issues"
+
+
+[[mods]]
+modId="morehorsearmor"
+version="${file.jarVersion}"
+displayName="More Horse Armor"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/more-horse-armor"
+updateJSONURL="https://onvoid.net/morehorsearmor/update.json"
+logoFile="morehorsearmor.png"
+logoBlur=false
+credits="onVoid"
+authors="onVoid"
+description="Adds Netherite & Enderite Horse Armors."
+itemIcon="morehorsearmor:netherite_horse_armor"
+configBackground="minecraft:textures/block/netherite_block.png"
+
+[[dependencies.morehorsearmor]]
+    modId="forge"
+    mandatory=true
+    versionRange="[39,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.morehorsearmor]]
+    modId="lolenderite"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="BOTH"
