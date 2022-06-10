@@ -1,12 +1,12 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:diamond_horse_armor"
+    "item": "morehorsearmor:netherite_horse_armor"
   },
   "addition": {
-    "item": "minecraft:netherite_ingot"
+    "tag": "forge:ingots/enderite"
   },
   "result": {
-    "item": "morehorsearmor:netherite_horse_armor"
+    "item": "morehorsearmor:enderite_horse_armor"
   }
 }

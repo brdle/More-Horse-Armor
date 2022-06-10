@@ -16,8 +16,8 @@ public class MoreHorseArmorItems {
     public static final RegistryObject<HorseArmorItem> NETHERITE_HORSE_ARMOR = ITEMS.register("netherite_horse_armor", () ->
             new HorseArmorItem(13, "netherite", (new Item.Properties()).stacksTo(1).tab(CreativeModeTab.TAB_MISC)));
 
-    public static final RegistryObject<HorseArmorItem> ENDERITE_HORSE_ARMOR = ITEMS.register("enderite_horse_armor", () ->
-            new HorseArmorItem(15, "enderite", (new Item.Properties()).stacksTo(1).tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<CompatHorseArmorItem> ENDERITE_HORSE_ARMOR = ITEMS.register("enderite_horse_armor", () ->
+            new CompatHorseArmorItem(15, "enderite", (new Item.Properties()).stacksTo(1).tab(CreativeModeTab.TAB_MISC), "ingot tag \"enderite\""));
 
     public static void create(IEventBus bus) {
         ITEMS.register(bus);
