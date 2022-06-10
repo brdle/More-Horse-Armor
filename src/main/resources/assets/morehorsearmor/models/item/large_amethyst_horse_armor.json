@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "morehorsearmor:item/large_amethyst_horse_armor"
+  }
+}

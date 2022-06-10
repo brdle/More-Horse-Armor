@@ -2,32 +2,36 @@ package net.onvoid.morehorsearmor.common;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.HorseArmorItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.fml.ModList;
+import net.minecraftforge.common.data.ForgeItemTagsProvider;
+import net.minecraftforge.registries.ForgeRegistries;
+
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class CompatHorseArmorItem extends HorseArmorItem {
+public class TaggedHorseArmorItem extends HorseArmorItem {
 
-    private final String compat;
+    private final String tag;
     /**
      * @param pProtection the given protection level of the {@code HorseArmorItem}
      * @param pIdentifier the texture path identifier for the {@code DyeableHorseArmorItem}, {@link
      *                    HorseArmorItem}
      * @param pProperties the item properties
      */
-    public CompatHorseArmorItem(int pProtection, String pIdentifier, Properties pProperties, String compat) {
+    public TaggedHorseArmorItem(int pProtection, String pIdentifier, Properties pProperties, String compat) {
         super(pProtection, pIdentifier, pProperties);
-        this.compat = compat;
+        this.tag = compat;
     }
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level pLevel, List<Component> tool, TooltipFlag pIsAdvanced) {
-        if (!ModList.get().isLoaded(this.compat)) {
-            tool.add(new TextComponent("Requires " + this.compat));
+        if (ForgeRegistries.ITEMS.getValue(new ResourceLocation("forge", "ingots/" + this.tag)) == null) {
+            tool.add(new TextComponent("Requires ingot tag \"" + this.tag + "\""));
         }
     }
 }
