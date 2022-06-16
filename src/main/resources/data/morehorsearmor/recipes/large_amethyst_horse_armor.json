@@ -1,0 +1,17 @@
+{
+    "type": "crafting_shaped",
+    "result": {
+        "item": "morehorsearmor:large_amethyst_horse_armor",
+        "count": 1
+    },
+    "pattern": [
+        "A A",
+        "AAA",
+        "A A"
+    ],
+    "key": {
+        "A": {
+            "tag": "forge:gems/large_amethyst"
+        }
+    }
+}

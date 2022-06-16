@@ -139,6 +139,8 @@ dependencies {
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
     runtimeOnly fg.deobf("curse.maven:enderite-lieonlion-550532:${enderite_version}")
     runtimeOnly fg.deobf("curse.maven:ores-above-diamonds-351339:${oad_version}")
+    runtimeOnly fg.deobf("curse.maven:mekanism-268560:${mekanism_version}")
+    runtimeOnly fg.deobf("curse.maven:mekanism-tools-268567:${mekanism_tools_version}")
     runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
 }
 

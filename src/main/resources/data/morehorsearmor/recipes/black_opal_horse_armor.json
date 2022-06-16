@@ -1,0 +1,17 @@
+{
+    "type": "crafting_shaped",
+    "result": {
+        "item": "morehorsearmor:black_opal_horse_armor",
+        "count": 1
+    },
+    "pattern": [
+        "A A",
+        "AAA",
+        "A A"
+    ],
+    "key": {
+        "A": {
+            "tag": "forge:gems/black_opal"
+        }
+    }
+}
