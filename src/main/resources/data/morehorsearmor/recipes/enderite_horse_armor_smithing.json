@@ -1,12 +1,28 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "morehorsearmor:netherite_horse_armor"
-  },
-  "addition": {
-    "tag": "forge:ingots/enderite"
-  },
-  "result": {
-    "item": "morehorsearmor:enderite_horse_armor"
-  }
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ingots/enderite"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:smithing",
+        "base": {
+          "item": "morehorsearmor:netherite_horse_armor"
+        },
+        "addition": {
+          "tag": "forge:ingots/enderite"
+        },
+        "result": {
+          "item": "morehorsearmor:enderite_horse_armor"
+        }
+      }
+    }
+  ]
 }
