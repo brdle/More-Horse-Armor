@@ -1,7 +1,6 @@
 package net.onvoid.morehorsearmor.common;
 
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.world.item.HorseArmorItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -27,7 +26,7 @@ public class CompatHorseArmorItem extends HorseArmorItem {
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level pLevel, List<Component> tool, TooltipFlag pIsAdvanced) {
         if (!ModList.get().isLoaded(this.compat)) {
-            tool.add(new TextComponent("Requires " + this.compat));
+            tool.add(Component.literal("Requires " + this.compat));
         }
     }
 }
