@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[40,)"
+loaderVersion="[41,)"
 license="MIT License"
 issueTrackerURL="https://github.com/brdle/More-Horse-Armor/issues"
 
@@ -14,13 +14,13 @@ logoFile="morehorsearmor.png"
 logoBlur=false
 credits="brdle, LieOnLion (textures)"
 authors="brdle, LieOnLion"
-description="Adds Netherite & Enderite Horse Armors."
+description="Adds Netherite & Mod Compat Horse Armors."
 itemIcon="morehorsearmor:netherite_horse_armor"
 configBackground="minecraft:textures/block/netherite_block.png"
 
 [[dependencies.morehorsearmor]]
     modId="forge"
     mandatory=true
-    versionRange="[40,)"
+    versionRange="[41,)"
     ordering="NONE"
     side="BOTH"
